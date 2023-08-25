@@ -7,7 +7,7 @@
 
 ## Unit tests
 * https://github.com/stretchr/testify
-```
+```go
 func Foo() error {}
 
 func TestFoo(t *testing.T) {
@@ -17,7 +17,7 @@ func TestFoo(t *testing.T) {
 }
 ```
 * testing (std)
-```
+```go
 func Foo() {}
 
 func TestFoo(t *testing.T) {
@@ -26,11 +26,36 @@ func TestFoo(t *testing.T) {
 })
 }
 ```
-
-  
-
 ## Mocks(generally)
-* in progress...
+* https://github.com/uber-go/mock
+```go
+func TestFoo(t *testing.T) {
+  ctrl := gomock.NewController(t)
+  defer ctrl.Finish()
+
+  m := NewMockFoo(ctrl)
+
+  // Does not make any assertions. Executes the anonymous functions and returns
+  // its result when Bar is invoked with 99.
+  m.
+    EXPECT().
+    Bar(gomock.Eq(99)).
+    DoAndReturn(func(_ int) int {
+      time.Sleep(1*time.Second)
+      return 101
+    }).
+    AnyTimes()
+
+  // Does not make any assertions. Returns 103 when Bar is invoked with 101.
+  m.
+    EXPECT().
+    Bar(gomock.Eq(101)).
+    Return(103).
+    AnyTimes()
+
+  SUT(m)
+}
+``` 
 
 ## Integration tests
 * in progress...
