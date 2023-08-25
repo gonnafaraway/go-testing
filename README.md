@@ -6,7 +6,28 @@
 * Repository created to collect different methodics of writing and using tests with Golang language.
 
 ## Unit tests
-* in progress...
+* https://github.com/stretchr/testify
+```
+func Foo() error {}
+
+func TestFoo(t *testing.T) {
+  err := Foo()
+  assert.NoError(t, err)
+})
+}
+```
+* testing (std)
+```
+func Foo() {}
+
+func TestFoo(t *testing.T) {
+  t.Run("Foo", func(t *testing.T) {
+    Foo()
+})
+}
+```
+
+  
 
 ## Mocks(generally)
 * in progress...
