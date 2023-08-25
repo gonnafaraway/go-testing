@@ -83,8 +83,13 @@ func FuzzReverse(f *testing.F) {
 }
 ```
 ## Benchmark tests
-* in progress...
-
+```go
+func BenchmarkRandInt(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        rand.Int()
+    }
+}
+```
 ## Mocking
 ### Vault
 * in progress...
