@@ -60,8 +60,8 @@ func TestFoo(t *testing.T) {
 ## Integration tests
 * use any contributed official driver for database to connect to real DEV db
 * use fixtures to simulate database fillment
-* use https://github.com/ariga/atlas to simalate database schema
-* use https://github.com/pashagolub/pgxmock or any similar to simulate connection to with fake client
+* use https://github.com/ariga/atlas to simulate database schema
+* use https://github.com/pashagolub/pgxmock or any similar driver to simulate connection with fake client
 
 ## Fuzzing tests
 * in progress...
