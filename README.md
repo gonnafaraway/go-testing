@@ -146,7 +146,9 @@ func createTestVault(t *testing.T) (net.Listener, *api.Client) {
 }
 ```
 ### Redis
-* in progress...
+* https://github.com/alicebob/miniredis
+* https://github.com/elliotchance/redismock
+* github.com/go-redis/redis
 ### PostgreSQL
 * in progress...
 ### K8s 
