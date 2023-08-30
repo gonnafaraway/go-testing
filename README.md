@@ -4,7 +4,9 @@
 </div>
 
 * Repository created to collect different methodics of writing and using tests with Golang language.
-
+## Tools
+### List tests in package/directory
+* https://github.com/crazy-max/gotestlist
 ## Unit tests
 * https://github.com/stretchr/testify
 ```go
