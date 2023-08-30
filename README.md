@@ -208,3 +208,5 @@ func Test_bookmarkFind(t *testing.T) {
 ```
 ### Pubsub
 * https://cloud.google.com/go/pubsub/pstest
+### Kafka
+* https://github.com/carlosstrand/confluent-kafka-mock-go
