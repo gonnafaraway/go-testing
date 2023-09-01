@@ -212,3 +212,5 @@ func Test_bookmarkFind(t *testing.T) {
 * https://cloud.google.com/go/pubsub/pstest
 ### Kafka
 * https://github.com/carlosstrand/confluent-kafka-mock-go
+### DNS
+* https://github.com/foxcpp/go-mockdns
