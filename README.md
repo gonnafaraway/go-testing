@@ -149,6 +149,9 @@ func createTestVault(t *testing.T) (net.Listener, *api.Client) {
     return ln, client
 }
 ```
+### Docker
+* https://dev-gang.ru/article/testirovanie-golang-s-ispolzovaniem-servisov-dokerov-czerez-dockertest-gpparw7eep/
+* https://github.com/ory/dockertest
 ### Redis
 * https://github.com/alicebob/miniredis
 * https://github.com/elliotchance/redismock
