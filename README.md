@@ -28,6 +28,8 @@ func TestFoo(t *testing.T) {
 })
 }
 ```
+## Fuzzing
+* https://bitfieldconsulting.com/golang/random-testing
 ## Mocks(generally)
 * https://github.com/uber-go/mock
 ```go
